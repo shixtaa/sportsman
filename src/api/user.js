@@ -4,13 +4,14 @@ export function login(data) {
   return request({
     url: '/login/Check',
     method: 'get',
-    params:data
+    params: data
   })
 }
 
 export function getInfo(token) {
+  console.log('getinfo')
   return request({
-    url: '/vue-element-admin/user/info',
+    url: '/home/GetUserEntity',
     method: 'get',
     params: { token }
   })

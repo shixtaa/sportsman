@@ -47,9 +47,9 @@ module.exports = [
     }
   },
 
-  // get user info
+  // // get user info
   {
-    url: '/vue-element-admin/user/info\.*',
+    url: '/home/GetUserEntity',
     type: 'get',
     response: config => {
       const { token } = config.query
